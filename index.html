@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>DOM - METODOS</h1>
+     <nav>
+        <ul  > 
+            <li> <a href="">getElementById</a></li>
+            <p>Ejemplos :
+               <br>
+               <br> cons navigator = document.getElementById("navigator");
+               <br> console.log(navigator);
+               <br> 
+               <br> 
+            </p>
+            <li> <a href="">getElementByTagName</a></li>
+            <p>Ejemplos :
+                <br>
+                <br> const link = document.getElementByTagName("a");
+                <br> console.log(link);
+                <br> 
+    
+            </p>
+
+            <li> <a href="">querySelector</a></li>
+
+            <p>Tambien se aplica a los selectores id , clases , clases con desendencia.
+                
+                Ejemplos :
+                <br>
+                <br> const link = document.querySelector('navigator nav ul');
+                <br> console.log(link);
+                <br> 
+            </p>
+
+            <li> <a href="">querySelectorAll</a></li>
+
+            <p>Ejemplos :
+                <br>
+                <br> const link = document.querySelectorAll("navigator nav ul li");
+                <br> console.log(link);
+                <br>
+                
+            </p>
+            <li> <a href="">SetAttribute</a></li>
+
+            <p>Ejemplos :
+                <br>
+                <br> const link = document.querySelector('section').SetAttribute('id','section=atribute);
+                <br> console.log(link);
+                <br>
+                </p>
+
+            <li> <a href="">COMO ACCEDER AL DOM</a></li>
+            <p> Se puede acceder al DOM por medio de los nodos     
+            <p> Ejemplo
+                <br>
+                <br> const link = document.querySelector('section').SetAttribute('id','section=atribute);
+                <br> console.log(link);
+                <br>
+                </p>
+
+            <li> <a href="">firstChild - LastChild</a></li>
+            <p>
+            <p> Ejemplo
+                <br>
+                <br> const firsTli = document.querySelector('ul').firstChild;
+                <br> console.log(firsTli);
+                <br>
+                <br> const firsTli = document.querySelector('li').LastChild;
+                <br> console.log(firsTli);
+                </p>
+
+            <li> <a href="">nextSibling</a></li>
+            <p>Se puede acceder al siguiente hermano de la lista.
+            <p> Ejemplo
+                <br>
+                <br> const firsTli = document.querySelector('ul').firsTli.nextSibling;
+                <br> console.log(firsTli);
+                <br> 
+            </p>
+    
+            <li> <a href="">innerHTML VS textContent</a></li>
+                <p>
+                <p> Ejemplo
+                    <br>
+                    <br>  = document.querySelector('.content').innerHTML
+                    <br>    Permite agregar SOLO HTML 
+                    <br>
+                    <br>  = document.querySelector('.content').textContent='SOLO TEXTO';
+                    <br>    Permite agregar contenido.
+                    <br> 
+                </p>
+        
+                <li> <a href="">style</a></li>
+                <p>
+                <p> Ejemplo
+                    <br>
+                    <br>  = document.querySelector('.content').style='color: red';
+                    <br>  = document.querySelector('.content').style='display: none ';
+                    <br> 
+                </p>
+        
+            <li> <a href="">SetAttribute y el removeAttribute</a></li>
+                <p>
+                <p> Ejemplo
+                    <br>
+                    <br>  = document.querySelector('section').SetAttribute('id','section=atribute');
+                    <br>  = document.querySelector.removeAttribute('id');
+                    <br> 
+                    <br>  = document.querySelector('data-testid','prueba=1');
+                    <br>  = document.querySelector.removeAttribute('data-testid');
+                </p>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        </ul>
+     </nav>
+    <script src="app.js"></script>    
+</body>
+</html>
